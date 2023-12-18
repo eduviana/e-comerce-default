@@ -3,7 +3,7 @@
 
   <p style='margin: 0 0 2rem; font-size: 1rem;'>Es un proyecto creado por desarrolladores junior buscando consolidarse en el mundo del desarrollo web. </p >
 <div><a href="https://github.com/Kapelu/e-comerce/blob/main/code_of_conduct.md" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Código%20de%20Conducta-7D3C98.svg" width="100px;" alt="Código de Conducta"/></a>
-<a href="https://github.com/Kapelu/e-comerce/blob/main/Colaboradores.md" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Colaboradores-10-orange.svg?style=flat" width="100px;" alt="Colaboradores"/></a></div>
+<a href="https://github.com/Kapelu/e-comerce/blob/main/colaboradores.md" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Colaboradores-10-orange.svg?style=flat" width="100px;" alt="Colaboradores"/></a></div>
 <br/>
 
 [**Ver DEMO**](https://e-comerce-kws.vercel.app/)

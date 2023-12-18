@@ -1,261 +1,215 @@
-@charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Roboto+Slab:wght@300&display=swap');
+/*$ ********** Variables de colores y fuente ********** */
 :root {
-  /* ------Colors------ */
-  --bg-primary: #000000;
-  --text-primary: #ffffff;
-}
-/* ------Start Headings------ */
-.heading-1,
-.heading-2,
-.heading-3,
-.heading-4,
-.heading-5,
-.heading-6 {
-  font-family: var(--font-roboto);
-}
+	/*# Colores */
+	--first-color: #ECB365;
+	--first-alpha-color: #ecb465d0;
+	--second-color: #028090;
+	--second-alpha-color: #02809075;
+	--third-color: #00A896;
+	--third-alpha-color: #00A89675;
+	--white-color: #fff;
+	--gray-light-color: #f3f3f3;
+	--gray-color: #ccc;
+	--gray-dark-color: #66666641;
+	--black-color: #000;
+	--link-color: #509ee3;
+	--title-color: #333;
+	--text-color: #222;
+	--white-alpha-color: rgba(255, 255, 255, 0.5);
+	--black-alpha-color: rgba(0, 0, 0, 0.5);
+	/*# Fuente */
+	--raleway: 'Raleway', sans-serif;
+    --roboto-slab:'Roboto Slab', serif;
 
-.heading-1 {
-  font-size: 60px;
-  line-height: 68px;
-}
 
-.heading-2 {
-  font-size: 48px;
-  line-height: 56px;
-}
-
-.heading-3 {
-  font-size: 40px;
-  line-height: 48px;
+	--max-width: 1200px;
+	--header-height: 4rem;
 }
 
-.heading-4 {
-  font-size: 32px;
-  line-height: 40px;
+/*$ ********** Scrollbar ********** */
+
+::-webkit-scrollbar {
+	width: 0px;
 }
 
-.heading-5 {
-  font-size: 24px;
-  line-height: 32px;
+/* ::-webkit-scrollbar-track {
+    background: #fff;
+}
+::-webkit-scrollbar-thumb {
+    background: #fff;
+} */
+
+
+/*$ ********** Reseteo Tank you Paul Irish ********** */
+
+html {
+	box-sizing: border-box;
+	font-family: var(--raleway);
+	font-size: 16px;
+	scroll-behavior: smooth;
 }
 
-.heading-6 {
-  font-size: 20px;
-  line-height: 28px;
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
 }
-
-/* ------End Headings------ */
-
-/* ------Start Texts------ */
-.largeText-bold,
-.largeText-regular,
-.mediumText-bold,
-.mediumText-regular,
-.normalText-bold,
-.normalText-regular,
-.smallText-bold,
-.smallText-regular {
-  font-family: var(--font-inter);
-}
-
-/* Font Sizes */
-.largeText-bold,
-.largeText-regular {
-  font-size: 20px;
-  line-height: 28px;
-}
-
-.mediumText-bold,
-.mediumText-regular {
-  font-size: 18px;
-  line-height: 26px;
-}
-
-.normalText-bold,
-.normalText-regular {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.smallText-bold,
-.smallText-regular {
-  font-size: 14px;
-  line-height: 22px;
-}
-
-/* Font Weights */
-.largeText-bold,
-.mediumText-bold,
-.normalText-bold,
-.smallText-bold {
-  font-weight: 700;
-}
-
-.largeText-regular,
-.mediumText-regular,
-.normalText-regular,
-.smallText-regular {
-  font-weight: 400;
-}
-
-/* ------End Texts------ */
 
 body {
-  font-family: var(--font-inter);
-  min-height: 100vh;
-  font-size: 100%;
-  color: var(--text-primary);
-  background-color: var(--bg-primary);
-  /* opcional */
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-  /* opcional */
-  font-smooth: always;
-  /* opcional */
-  -webkit-font-smoothing: antialiased;
-  /* opcional */
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0; 
+	overflow-x: hidden; 
+	color: var(--text-color);
 }
 
-.main {
-  min-height: 100vh;
-}
-
-/* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    -webkit-animation: none !important;
-    animation: none !important;
-    -webkit-transition: none !important;
-    transition: none !important;
-  }
-}
-/* Reseteamos los margin y paddings de todas las etiquetas */
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  vertical-align: baseline;
-}
-
-/* Evitamos problemas con las imagenes */
-img,
-picture,
-video,
-iframe,
-figure {
-  max-width: 100%;
-  width: 100%;
-  display: block;
-  /* opcional */
-  -o-object-fit: cover;
-  object-fit: cover;
-  /* opcional */
-  -o-object-position: center center;
-  object-position: center center;
-}
-
-/* Reseteamos los enlaces para funcionar como cajas... */
 a {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  font-size: inherit;
+	color: var(--black-color);
+    text-decoration: none;
+	transition: all 0.5s ease-out; 
 }
 
-/* ... excepto los que se encuentran en párrafos */
-p a {
-  display: inline;
+a:hover {
+	opacity: 0.75;
 }
 
-/* Quitamos los puntos de los <li> */
-li {
-  list-style-type: none;
+h1 {
+	margin: 0;
+	font-size: 2rem;
 }
 
-/* Configuramos anclas suaves */
-html {
-  scroll-behavior: smooth;
+h2 {
+	margin: 0;
+	font-size: 1.5rem;
 }
 
-/* Desactivamos estilos por defecto de las principales etiquetas de texto */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-span,
-a,
-strong,
-blockquote,
-i,
-b,
-u,
-em {
-  font-size: 1em;
-  font-weight: inherit;
-  font-style: inherit;
-  text-decoration: none;
-  color: inherit;
+h3 {
+	margin: 0;
+	font-size: 1.25rem;
 }
 
-/* Evitamos problemas con los pseudoelementos de quotes */
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
+h4 {
+	margin: 0;
+	font-size: 1rem;
 }
 
-/* Configuramos el texto que seleccionamos */
-::-moz-selection {
-  /* background-color: var(--negro);
-  color: var(--blanco); */
-}
-::selection {
-  /* background-color: var(--negro);
-  color: var(--blanco); */
+h5 {
+	margin: 0;
+	font-size: 0.85rem;
 }
 
-/* Nivelamos problemas de tipografías y colocación de formularios */
-form,
-input,
-textarea,
-select,
-button,
-label {
-  font-family: inherit;
-  font-size: inherit;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-  background-color: transparent;
-  color: inherit;
-  display: block;
-  /* opcional */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+h6 {
+	margin: 0;
+	font-size: 0.7rem;
 }
 
-/* Reseteamos las tablas */
-table,
-tr,
-td {
-  border-collapse: collapse;
-  border-spacing: 0;
+img {
+	max-width: 100%; 
+	/* height: auto; */
 }
 
-/* Evitamos problemas con los SVG */
-svg {
-  width: 100%;
-  display: block;
-  fill: currentColor;
+p {
+	line-height: 1.6; 
+}
+
+/*$ ********** Utilities ********** */
+.foto-perfil{
+    filter:drop-shadow(1px 4px 15px var(--second-color))
+}
+
+.bg-gray-light {
+	background-color: var(--gray-light-color);
+}
+
+.box-shadow-1 {
+	box-shadow: 0.25rem 0.25rem 1rem #77777780;
+}
+
+.btn {
+	border-radius: 0.5rem;
+	padding: 1rem;
+	display: inline-block;
+	width: 200px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: var(--second-color);
+	background-color: var(--first-alpha-color);
+}
+.container {
+	margin-left: auto; 
+	margin-right: auto; 
+	max-width: var(--max-width); 
+}
+
+.gray-scale {
+	filter: grayscale(1);
+}
+
+.none {
+	display: none;
+}
+
+.section {
+	padding: 2rem 1rem;
+}
+
+.section-title {
+	border-top: thin solid var(--first-color);
+	border-bottom: thin solid var(--first-color);
+	margin: 2rem auto;
+	padding: 0.5rem 1rem;
+	width: 250px;
+	text-align: center;
+	color: var(--second-color);
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+@media screen and (min-width: 1024px) {
+	.full-lg-screen {
+		width: 100%;
+		min-height: 100vh;
+	}
+
+	.text-lg-center {
+		text-align: center;
+	}
+
+	.text-lg-left {
+		text-align: left;
+	}
+
+	.text-lg-right {
+		text-align: right;
+	}
+}
+
+/*$ ********** Estilos del Sitio ********** */
+.hero-image {
+    background-color: rgba(0, 59, 77, 0.91);
+	background-image: url('/hero-image.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: var(--first-alpha-color);
+}
+
+.hero-image-opacity {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	background-color: var(--black-alpha-color);
 }
