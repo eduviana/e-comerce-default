@@ -2,12 +2,12 @@
 /*$ ********** Variables de colores y fuente ********** */
 :root {
 	/*# Colores */
-	--first-color: #ECB365;
-	--first-alpha-color: #ecb465d0;
-	--second-color: #028090;
-	--second-alpha-color: #02809075;
-	--third-color: #00A896;
-	--third-alpha-color: #00A89675;
+	--first-color: #973535;
+	--first-alpha-color: #97353575;
+	--second-color: #999966;
+	--second-alpha-color: #99996675;
+	--third-color: #bc9a6c;
+	--third-alpha-color: #bc9a6c75;
 	--white-color: #fff;
 	--gray-light-color: #f3f3f3;
 	--gray-color: #ccc;
@@ -16,8 +16,10 @@
 	--link-color: #509ee3;
 	--title-color: #333;
 	--text-color: #222;
-	--white-alpha-color: rgba(255, 255, 255, 0.5);
-	--black-alpha-color: rgba(0, 0, 0, 0.5);
+    --text-title-color: #cfbc0a;
+    --text-subtitle-color: #ffffff9d;
+	--white-alpha-color: #ffffff80;
+	--black-alpha-color: #00000050;
 	/*# Fuente */
 	--raleway: 'Raleway', sans-serif;
     --roboto-slab:'Roboto Slab', serif;
@@ -124,7 +126,7 @@ p {
 	box-shadow: 0.25rem 0.25rem 1rem #77777780;
 }
 
-.btn {
+.first-btn {
 	border-radius: 0.5rem;
 	padding: 1rem;
 	display: inline-block;
@@ -134,6 +136,18 @@ p {
 	text-decoration: none;
 	color: var(--second-color);
 	background-color: var(--first-alpha-color);
+}
+
+.second-btn {
+	border-radius: 0.5rem;
+	padding: 1rem;
+	display: inline-block;
+	width: 200px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: var(--second-color);
+	background-color: var(--gray-dark-color);
 }
 .container {
 	margin-left: auto; 
@@ -195,21 +209,26 @@ p {
 }
 
 /*$ ********** Estilos del Sitio ********** */
+/* ********** HeroImage ********** */
 .hero-image {
-    background-color: rgba(0, 59, 77, 0.91);
-	background-image: url('/hero-image.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
-	color: var(--first-alpha-color);
 }
 
 .hero-image-opacity {
 	width: 100%;
 	min-height: 100vh;
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: var(--black-alpha-color);
+}
+
+.hero-image-title {
+	font-size: 7.5vw;
+}
+
+.hero-image-subtitle {
+	font-size: 4vw;
 }
