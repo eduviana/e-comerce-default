@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:ital,wght@1,500&family=Roboto+Slab:wght@700&display=swap');
 /*$ ********** Variables de colores y fuente ********** */
 :root {
 	/*# Colores */
@@ -21,6 +21,7 @@
 	--white-alpha-color: #ffffff80;
 	--black-alpha-color: #00000050;
 	/*# Fuente */
+    --dancing-script: 'Dancing Script', cursive;
 	--raleway: 'Raleway', sans-serif;
     --roboto-slab:'Roboto Slab', serif;
 
@@ -226,9 +227,9 @@ p {
 }
 
 .hero-image-title {
-	font-size: 7.5vw;
+	font-size: 9vw;
 }
 
 .hero-image-subtitle {
-	font-size: 4vw;
+	font-size: 5vw;
 }

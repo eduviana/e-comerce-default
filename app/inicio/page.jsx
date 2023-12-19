@@ -30,7 +30,7 @@ export default function Inicio() {
 					</h2>
                     <br />
 					<Link href='/contacto' class='first-btn'>
-						CONTÁCTAME
+						Menú
 					</Link>
 				</div>
 			</aside>
