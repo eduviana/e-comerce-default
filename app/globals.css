@@ -19,12 +19,12 @@
     --text-title-color: #cfbc0a;
     --text-subtitle-color: #ffffff9d;
 	--white-alpha-color: #ffffff80;
-	--black-alpha-color: #246d3c50;
+	--black-alpha-color: #00000050;
 	/*# Fuente */
     --dancing-script: 'Dancing Script', cursive;
 	--raleway: 'Raleway', sans-serif;
     --roboto-slab:'Roboto Slab', serif;
-
+github
 
 	--max-width: 1200px;
 	--header-height: 4rem;
@@ -131,7 +131,7 @@ p {
 	border-radius: 0.5rem;
 	padding: 1rem;
 	display: inline-block;
-	width: 200px;
+	width: 150px;
 	font-weight: bold;
 	text-align: center;
 	text-decoration: none;
@@ -228,8 +228,10 @@ p {
 
 .hero-image-title {
 	font-size: 9vw;
+    font-weight: 900;
 }
 
 .hero-image-subtitle {
 	font-size: 5vw;
+    font-weight: 300;
 }

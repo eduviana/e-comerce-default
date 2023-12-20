@@ -1,20 +1,6 @@
-import {Inter, Roboto} from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
-
-const roboto = Roboto({
-	subsets: ['latin'],
-	display: 'swap',
-	weight: ['100', '300', '400', '500', '700', '900'],
-	variable: '--font-roboto',
-})
-
-const inter = Inter({
-	subsets: ['latin'],
-	display: 'swap',
-	variable: '--font-inter',
-})
 
 export const metadata = {
 	title: 'La Cuchara - Restaurant',
@@ -24,7 +10,7 @@ export const metadata = {
 export default function RootLayout({children}) {
 	return (
 		<html lang='es'>
-			<body className={`${inter.variable} ${roboto.variable}`}>
+			<body>
                 <Header />
 				{children}
                 <Footer />
