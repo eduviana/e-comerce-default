@@ -2,10 +2,10 @@ import Link from 'next/link'
 //import './style.css'
 
 export default function Inicio() {
-	const background = '/background.jpg'
+	const background = '/image104.jpg'
 	const attachmentValue = 'fixed'
 	const opacityColor = 'var(--black-alpha-color)'
-    const fontTitle ='Raleway'
+    const fontTitle =''
 	const colorTitle = 'var(--text-title-color)'
     const fontSubtitle ='Roboto Slab'
     const colorSubtitle = 'var(--text-subtitle-color)'
@@ -29,7 +29,7 @@ export default function Inicio() {
 						Restaurant
 					</h2>
                     <br />
-					<Link href='/contacto' class='first-btn'>
+					<Link href='/contacto' class='second-btn'>
 						Menú
 					</Link>
 				</div>
@@ -37,9 +37,3 @@ export default function Inicio() {
 		</article>
 	)
 }
-
-/* style='--hero-opacity-color: var(--black-alpha-color)' 
-
-style='--hero-text-color: var(--white-color)'
-
-*/

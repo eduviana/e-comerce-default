@@ -19,7 +19,7 @@
     --text-title-color: #cfbc0a;
     --text-subtitle-color: #ffffff9d;
 	--white-alpha-color: #ffffff80;
-	--black-alpha-color: #00000050;
+	--black-alpha-color: #246d3c50;
 	/*# Fuente */
     --dancing-script: 'Dancing Script', cursive;
 	--raleway: 'Raleway', sans-serif;
@@ -147,8 +147,8 @@ p {
 	font-weight: bold;
 	text-align: center;
 	text-decoration: none;
-	color: var(--second-color);
-	background-color: var(--gray-dark-color);
+	color: var(--first-color);
+	background-color: var(--second-color);
 }
 .container {
 	margin-left: auto; 
@@ -190,7 +190,7 @@ p {
 	text-align: right;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1920px) {
 	.full-lg-screen {
 		width: 100%;
 		min-height: 100vh;
