@@ -2,23 +2,23 @@
 	{
 		"inicio": {
 			"name": "Inicio",
-			"link": "/inicio"
+			"link": "#inicio"
 		},
 		"acerca": {
 			"name": "Acerca",
-			"link": "/acerca"
+			"link": "#acerca"
 		},
 		"menu": {
 			"name": "Menú",
-			"link": "/menu"
+			"link": "#menu"
 		},
 		"galeria": {
 			"name": "Galería",
-			"link": "/galeria"
+			"link": "#galeria"
 		},
 		"contacto": {
 			"name": "Contacto",
-			"link": "/contacto"
+			"link": "#contacto"
         }
 	}
 ]
