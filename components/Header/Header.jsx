@@ -5,6 +5,7 @@ import menu from './/headerMenu.json'
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '@/public/Logo.png'
+import Cart from '@/public/cart.svg'
 
 export default function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -80,7 +81,21 @@ export default function Header() {
 					))}
 				</nav>
 				<div>
-                &#32;
+                <Link
+						className='link'
+						href='/carrito'
+						rel='noopener noreferrer preload'
+						as='/carrito'
+					>
+						<Image
+							src={Cart}
+							className='image-perfil'
+							alt='logo'
+							width='32'
+							priority={true}
+							as='image'
+						/>
+					</Link>
 				</div>
 			</section>
 		</header>
