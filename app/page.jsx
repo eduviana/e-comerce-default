@@ -10,12 +10,12 @@ export default function Home() {
   return (
     <LayoutFirst>
       <main className="main">
-        <AboutUs />
+        {/* <AboutUs />
         <FoodCategories />
         <WhyChooseUs />
         <MoreInfo />
         <LatestNews />
-        <About />
+        <About /> */}
       </main>
     </LayoutFirst>
   );

@@ -1,4 +1,129 @@
-.hero{
-    height: 390px;
-    background-color: blueviolet;
+.hero {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.title {
+  text-align: center;
+  width: max-content;
+}
+
+.subtitle {
+  text-align: center;
+  width: 80%;
+}
+
+.paragraph {
+  text-align: center;
+}
+
+.link {
+  z-index: 10;
+}
+
+.background {
+  background-image: url("/backgrounds/heroBackground.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 78%;
+  position: absolute;
+  width: 346px;
+  height: 417px;
+  z-index: -10;
+}
+
+@media (min-width: 768px) {
+  .background {
+    background-image: url("/backgrounds/heroBackground.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 82%;
+    position: absolute;
+    width: 480px;
+    height: 478px;
+    right: 35px;
+    top: 36px;
+  }
+
+  .subtitle {
+    width: 60%;
+  }
+
+  .paragraph {
+    width: 70%;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .subtitle {
+    width: 40%;
+  }
+
+  .paragraph {
+    width: 55%;
+  }
+
+  .background {
+    background-image: url("/backgrounds/heroBackground.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    position: absolute;
+    width: 480px;
+    height: 478px;
+    right: 146px;
+    top: 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 0;
+    gap: 6rem;
+  }
+
+  .container {
+    align-items: start;
+    flex: 1.5;
+    padding: 1rem;
+    gap: 2.5rem;
+    padding: 0;
+  }
+
+  .subtitle {
+    text-align: left;
+    width: 80%;
+  }
+
+  .paragraph {
+    text-align: left;
+    width: 88%;
+  }
+
+  .background {
+    flex: 2;
+    position: static;
+    background-image: url("/backgrounds/heroBackgroundSolid.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: 586px;
+  }
 }

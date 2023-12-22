@@ -1,5 +1,40 @@
 .footer {
-  height: 184px;
-  background-color: chartreuse;
-  
+  background-color: var(--color-primary);
+  padding: 2rem 1.5rem;
+}
+
+.container {
+  width: 86%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.square {
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 }

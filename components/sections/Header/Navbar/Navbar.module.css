@@ -1,4 +1,172 @@
-.navbar{
-    height: 32px;
-    background-color: blue;
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.accentText {
+  color: var(--color-primary);
+}
+
+.normalText {
+  color: var(--color-secondary);
+}
+
+.links {
+  display: none;
+}
+
+/* .menuOpen {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  padding: 14px 1rem;
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 100vh;
+  top: -14px;
+  right: -31px;
+  z-index: 20;
+  transition: all 300ms ease-in;
+}
+
+.closeMenu {
+  align-self: flex-end;
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin-right: 1rem;
+} */
+
+@keyframes slideIn {
+  from {
+    right: -100%; /* Valor inicial, completamente fuera del lienzo */
+  }
+  to {
+    right: 0; /* Valor final, posición mostrada */
+  }
+}
+
+.menuOpen {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  padding: 14px 1rem;
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 65vh;
+  top: -14px;
+  z-index: 20;
+  animation: slideIn 300ms ease; /* Aplicar la animación slideIn */
+}
+
+.closeMenu {
+  align-self: flex-end;
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.menuItem {
+  align-self: center;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.shoppingCart {
+  order: 1;
+}
+
+.hamburguer {
+  order: 2;
+}
+
+.search {
+  display: none;
+}
+
+.user {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .links {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .link {
+    position: relative;
+    transition: all 300ms ease;
+  }
+
+  .link:active,
+  .link:focus,
+  .link:hover {
+    color: var(--color-primary);
+  }
+
+  .link::after {
+    content: "";
+    position: absolute;
+    bottom: -20px; /* Ajusta según sea necesario */
+    left: 50%; /* Centra el punto debajo del texto */
+    transform: translateX(-50%); /* Centra horizontalmente el punto */
+    width: 10px; /* Ancho del punto */
+    height: 10px; /* Altura del punto */
+    background-color: var(--color-primary); /* Color del punto rojo */
+    border-radius: 50%; /* Hace que el punto sea circular */
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 500ms ease; /* Agrega una transición suave */
+  }
+
+  .link:hover::after {
+    opacity: 1; /* Hace que el punto sea visible al hacer hover */
+  }
+
+  .shoppingCart,
+  .user,
+  .search {
+    cursor: pointer;
+  }
+
+  .shoppingCart:hover,
+  .user:hover,
+  .search:hover {
+    scale: 1.2;
+    transition: all 300ms ease;
+  }
+
+  .shoppingCart {
+    order: 3;
+  }
+
+  .user {
+    display: initial;
+    order: 2;
+  }
+
+  .search {
+    display: initial;
+    order: 1;
+  }
+
+  .hamburguer {
+    display: none;
+  }
 }

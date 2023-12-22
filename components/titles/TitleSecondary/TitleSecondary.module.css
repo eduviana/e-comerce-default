@@ -1,3 +1,15 @@
 .titleSecondary{
-    
+    text-align: center;
+}
+
+.highlight {
+    color: var(--color-primary)
+   
+  }
+
+
+  @media (min-width: 1440px) {
+    .titleSecondary{
+        text-align: left;
+    }
 }

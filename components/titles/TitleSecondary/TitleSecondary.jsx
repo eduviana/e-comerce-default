@@ -1,10 +1,15 @@
 import styles from "./TitleSecondary.module.css";
 
+const TitleSecondary = ({ title }) => {
+  const firstTwoLetters = title.substring(0, 2);
+  const restOfTitle = title.substring(2);
 
-const TitleSecondary = () => {
   return (
-    <div className={styles.titleSecondary}>TitleSecondary</div>
-  )
-}
+    <div className={`heading-2 ${styles.titleSecondary}`}>
+      <span className={styles.highlight}>{firstTwoLetters}</span>
+      {restOfTitle}
+    </div>
+  );
+};
 
-export default TitleSecondary
+export default TitleSecondary;
