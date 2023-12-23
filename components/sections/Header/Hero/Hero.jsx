@@ -1,13 +1,10 @@
-import TitlePrimary from "@/components/titles/TitlePrimary/TitlePrimary";
-import styles from "./Hero.module.css";
-import TitleSecondary from "@/components/titles/TitleSecondary/TitleSecondary";
-import Paragraph from "@/components/paragraph/Paragraph";
-import ButtonPrimary from "@/components/buttons/ButtonPrimary/ButtonPrimary";
 import Link from "next/link";
+import styles from "./Hero.module.css";
 
 const Hero = () => {
   return (
-    <div className={styles.hero}>
+   <div className="main-container">
+     <div className={styles.hero}>
       <div className={styles.container}>
         <h2 className={`heading-1 ${styles.title}`}>Its Quick & Amusing!</h2>
         <h3 className={`heading-2 ${styles.subtitle}`}>
@@ -23,6 +20,7 @@ const Hero = () => {
       </div>
       <div className={styles.background} />
     </div>
+   </div>
   );
 };
 
