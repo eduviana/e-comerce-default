@@ -5,16 +5,15 @@ import styles from "./LayoutPrimary.module.css";
 
 const LayoutFirst = ({ children }) => {
   return (
-    <>
-      {/* <div className="main-container"> */}
-        <header className={styles.header}>
-          <Navbar />
-          <Hero />
-        </header>
-        {children}
-      {/* </div> */}
+    <div className={styles.container}>
+      <header className={styles.header}>
+        <Navbar />
+        <Hero />
+      </header>
+      {children}
+
       <Footer />
-    </>
+    </div>
   );
 };
 

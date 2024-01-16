@@ -6,6 +6,19 @@
   --color-primary: #973535;
   --color-secondary: #ffffff;
 }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+  gap: 6rem;
+}
+
+.main-container {
+  width: 86%;
+  margin: .875rem auto;
+}
+
 /* ------Start Headings------ */
 
 .heading-1 {
@@ -89,12 +102,8 @@
   background-color: rgba(151, 53, 53, 0.8);
 }
 
-/* ------End Headings------ */
+ 
 
-.main-container {
-  width: 86%;
-  margin: .875rem auto;
-}
 
 .accent {
   color: var(--color-primary);
@@ -140,6 +149,7 @@
 @media (min-width: 1440px) {
   .main-container {
     margin: 2.875rem auto;
+    width: 86%;
   }
 
   .heading-1 {

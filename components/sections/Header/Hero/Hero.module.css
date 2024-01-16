@@ -1,13 +1,14 @@
 .hero {
   width: 100%;
-  margin: 0 auto;
-  padding: 0 0.5rem;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
 .container {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,9 +92,9 @@
     position: static;
     background-image: url("/backgrounds/heroBackgroundSolid.png");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: 18px 52px;
     background-size: contain;
-    height: 586px;
+    
   }
 }
 
@@ -101,6 +102,11 @@
   .subtitle,
   .paragraph {
     width: 80%;
+  }
+
+  .background {
+    background-position: 64px 0px;
+    height: 586px;
   }
 }
 

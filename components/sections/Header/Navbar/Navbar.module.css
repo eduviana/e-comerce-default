@@ -117,19 +117,19 @@
   .link::after {
     content: "";
     position: absolute;
-    bottom: -20px; /* Ajusta según sea necesario */
-    left: 50%; /* Centra el punto debajo del texto */
-    transform: translateX(-50%); /* Centra horizontalmente el punto */
-    width: 10px; /* Ancho del punto */
-    height: 10px; /* Altura del punto */
-    background-color: var(--color-primary); /* Color del punto rojo */
-    border-radius: 50%; /* Hace que el punto sea circular */
-    opacity: 0; /* Inicialmente invisible */
-    transition: opacity 500ms ease; /* Agrega una transición suave */
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 500ms ease;
   }
 
   .link:hover::after {
-    opacity: 1; /* Hace que el punto sea visible al hacer hover */
+    opacity: 1;
   }
 
   .shoppingCart,

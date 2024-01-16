@@ -1,4 +1,169 @@
-.whyChooseUs{
-    height: 1476px;
-    background-color: brown;
+.whyChooseUs {
+}
+
+.prueba {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.titles {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  width: 86px;
+  height: 76px;
+}
+
+.galleryFirst {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr; /* Dos columnas */
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-top: 4rem;
+}
+
+.first {
+  grid-row: span 2; /* Ocupa dos filas */
+  grid-column: span 1; /* Ocupa una columna */
+}
+
+.second {
+  grid-row: span 1; /* Ocupa una fila */
+  grid-column: span 1; /* Ocupa una columna */
+}
+
+.third {
+  grid-row: span 1; /* Ocupa una fila */
+  grid-column: span 1; /* Ocupa una columna */
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth,
+.sixth {
+  border-radius: 0.3rem;
+}
+
+.gallerySecond {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr; /* Dos columnas */
+  grid-template-rows: repeat(2, 1fr); /* Cuatro filas */
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.fourth {
+  grid-row: span 1; /* Ocupa una fila */
+  grid-column: span 1; /* Ocupa una columna */
+}
+
+.fifth {
+  grid-row: span 2; /* Ocupa dos filas */
+  grid-column: span 1; /* Ocupa una columna */
+}
+
+.sixth {
+  grid-row: span 1; /* Ocupa una fila */
+  grid-column: span 1; /* Ocupa una columna */
+}
+
+.experienced {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  background-color: #ffffff;
+  border-left: 12px solid var(--color-primary);
+  border-radius: 0.3rem;
+  margin: 2rem 0;
+}
+
+.yearsContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.years {
+  color: var(--color-primary);
+}
+
+.text {
+  color: #000000;
+}
+
+.experiencedDesktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .categories {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .category {
+    gap: 1rem;
+  }
+
+  .icon {
+    width: 120px;
+    height: 110px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .prueba {
+    flex-direction: row-reverse;
+    gap: 3rem;
+  }
+
+  .wrapper {
+    flex: 1;
+  }
+
+  .galleriesContainer {
+    flex: 1;
+  }
+
+  .experienced {
+    display: none;
+  }
+
+  .experiencedDesktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    background-color: #ffffff;
+    border-left: 12px solid var(--color-primary);
+    border-radius: 0.3rem;
+    margin: 2rem 0;
+  }
 }
